@@ -36,7 +36,7 @@ button {
   padding: .5rem;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
+  /* display: inline-block; */
   font-size: 14px;
   font-family: 'Roboto Mono', monospace;
 }
@@ -51,6 +51,11 @@ button:hover {
   background-color: #FF2D8F;
   color: white;
 }
+
+/* for js, hides all tab content when first on page */
+/* .tabcontent:not(.active) {
+  display:none;
+} */
 
 
 /* .navbar-nav {

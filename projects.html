@@ -4,6 +4,7 @@
       <title>Natalie Roy</title>
       <link rel="stylesheet" type="text/css" href="style.css" />
       <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+      <script src ="script.js"></script>
   </head>
   <body>
     <h1 class="page-title">Natalie Roy</h1>
@@ -18,7 +19,23 @@
 
     <main>
       <h2>Things I've Done</h2>
-      <p></p>
+      <div class="tab">
+        <button class="tablinks", onclick="openTab(event, 'Test1')">Test 1</button>
+        <button class="tablinks", onclick="openTab(event, 'Test2')">Test 2</button>
+        <button class="tablinks", onclick="openTab(event, 'Test3')">Test 3</button>
+
+        <div id="Test1" class="tabcontent">
+          <p> this should show test1! </p>
+        </div>
+
+        <div id="Test2" class="tabcontent">
+          <p>this should show test2! </p>
+        </div>
+
+        <div id="Test3" class="tabcontent">
+          <p>this should show test3! </p>
+        </div>
+
 
     </main>
   </body>
