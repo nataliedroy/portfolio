@@ -137,6 +137,46 @@ button:hover {
   animation: fadeEffect 1s; /* Fading effect takes 1 second */
 }
 
+.container {
+  position: relative;
+  text-align: center;
+  /* color: white; */
+}
+
+.imglink {
+  opacity: 1;
+  display: block;
+  height: auto;
+  transition: 600ms ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.container:hover .imglink {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.linktxt a {
+  color: black;
+}
+
+
+
+
+
+
+
 /* Go from zero to full opacity */
 @keyframes fadeEffect {
   from {opacity: 0;}
@@ -153,6 +193,7 @@ button:hover {
   .tabcontent {
     width: 100%;
     height: 100%;
+    padding-top: 1rem;
   }
 }
 
