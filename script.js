@@ -19,4 +19,6 @@ function openTab(evt, tabName) {
   // show sleected tab and declare it active
   document.getElementById(tabName).style.display = "block";
   evt.currentTarget.className += " active";
+
+  document.getElementById("defaultOpen").click();
 }
